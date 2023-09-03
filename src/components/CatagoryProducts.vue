@@ -16,9 +16,15 @@
              </div>
             </div>
              <div class="products">
-                <div v-for="n in 6" :key="n" class="single-product">
+                <SingleProduct
+                v-for ="(product,i) in products"
+                :key="i"
+                :product="product"
+                />
+                <div class="single-product">
                     <div class="img-container">
                     <img src= "../assets/images/b1.png" alt="" />
+                    <div class="sale">-50%</div>
                     </div>
                     <div class="product-content">
                         <h6 class="name">Short sleeved Hoodi</h6>
@@ -38,6 +44,7 @@
 
 <script setup>
 import {ref}from 'vue';
+import SingleProduct from "./SingleProduct.vue"
 
 const tabs = ref ([
     "Neue SACHEN",
@@ -47,7 +54,58 @@ const tabs = ref ([
     "FEATURED PROUDUCTS",
 ])
 const activeIndex = ref(0)
+const products=ref([
+    {
+        img:'../src/assets/images/b1.png',
+        sale: false,
+        name: `Short sleeved Hoodi`,
+        price: "$32.55",
+        bewertung:"../src/assets/images/bewertung.png"
+    },
+    {
+        img:'../src/assets/images/b2.png',
+        sale: false,
+        name: `Short sleeved Hoodi`,
+        price: "$32.55",
+        bewertung:"../src/assets/images/bewertung.png" 
+    },
+    {
+        img:'../src/assets/images/b3.png',
+        sale:false,
+        name: `Short sleeved Hoodi`,
+        price: "$32.55",
+        bewertung:"../src/assets/images/bewertung.png"
+    },
+    {
+        img:'../src/assets/images/b1.png',
+        sale: false,
+        name: `Short sleeved Hoodi`,
+        price: "$32.55",
+        bewertung:"../src/assets/images/bewertung.png"
+    },
+    {
+        img:'../src/assets/images/b2.png',
+        sale: false,
+        name: `Short sleeved Hoodi`,
+        price: "$32.55",
+        bewertung:"../src/assets/images/bewertung.png" 
+    },
+    {
+        img:'../src/assets/images/b3.png',
+        sale:false,
+        name: `Short sleeved Hoodi`,
+        price: "$32.55",
+        bewertung:"../src/assets/images/bewertung.png"
+    }, 
+    {
+        img:'../src/assets/images/b2.png',
+        sale: false,
+        name: `Short sleeved Hoodi`,
+        price: "$32.55",
+        bewertung:"../src/assets/images/bewertung.png"
+    }
 
+])
 </script>
 
 <style scoped>
@@ -104,6 +162,17 @@ margin:auto;
     grid-template-columns:1fr 1fr 1fr 1fr;
     gap:30px;
 }
+.singel-product .img-container{
+    position:relative;
+}
+.singel-product .img-container .sale{
+    position:absolute;
+    top:0;
+    left:0;
+    padding:9;
+    background:red;
+    right: auto;
+}
 .single-product  .product-content h6{
 
     padding: 10px 0px;
@@ -118,6 +187,7 @@ margin:auto;
     display:flex;
     justify-content:space-between; 
     align-items:center;
+    margin-top:5px;
     
 }
 .single-product .bewertung .price{

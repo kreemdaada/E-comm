@@ -14,3 +14,5 @@ import CatagoryProducts from "../components/CatagoryProducts.vue"
 <style scoped>
 
 </style>
+
+
