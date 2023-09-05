@@ -1,14 +1,14 @@
 <template>
                 <div class="single-product">
                     <div class="img-container">
-                    <img :src= "product.img" alt="" />
+                    <img :src= product.img alt="" />
                     <div v-if="product.sale" class="sale">-50%</div>
                     </div>
                     <div class="product-content">
-                        <h6 class="name">Short sleeved Hoodi</h6>
+                        <h6 class="name"></h6>
                         {{ product.name }}
                         <div class="bewertung">
-                            <span class="price">$32.55</span>
+                            <span class="price"></span>
                             {{ product.price }}
                             <span class="icon">
                                 <img :src= "product.bewertung" alt="" >
@@ -26,13 +26,19 @@ defineProps({
         type: Object,
     },
 });
+
+
 </script>
 
 <style scoped>
-.singel-product .img-container{
+
+
+
+
+.single-product .img-container{
     position:relative;
 }
-.singel-product .img-container .sale{
+.single-product .img-container .sale{
     position:absolute;
     top:0;
     left:0;

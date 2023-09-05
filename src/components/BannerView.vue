@@ -4,7 +4,7 @@
        <div class="banner-content">
         <div class="main-banner">
          <div class="img-container">
-           <img src="../assets/images/bild1.png" alt="" />
+           <img src="../assets/images/bild1.jpg" alt="" />
            <div class="img-content">
            <span>Banner</span>
            <h3>Dein text</h3>
