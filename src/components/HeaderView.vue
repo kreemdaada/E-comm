@@ -49,7 +49,7 @@
         </nav>
 </template>
 
-<script setup lang="ts">
+<script setup>
 
 
 
@@ -92,5 +92,12 @@ nav .nav-inner{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.nav-inner .logo img{
+    width: 101px;
+    height: 70px;
+
+
+
 }
 </style>

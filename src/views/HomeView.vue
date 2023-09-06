@@ -3,6 +3,7 @@ import BannerView from "../components/BannerView.vue"
 import CatagoryProducts from "../components/CatagoryProducts.vue"
 import {ref} from "vue"
 import Featured from "../components/Featured.vue"
+import Subscribe from "../components/Subscribe.vue"
 const Frauentabs = ref ([
     "Neue SACHEN",
     "SPIEZEALL",
@@ -82,6 +83,7 @@ const Mantitle = ref('Man')
     :products="Frauenproducts"
     />
     <Featured/>
+    <Subscribe/>
 </div>
 </template>
 

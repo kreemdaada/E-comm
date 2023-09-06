@@ -35,9 +35,9 @@ defineProps (["title","products","tabs"])
     margin-bottom:100px;
 }
 .catagory-products .btn{
-    height:48px;
-    background:#f8f8f8;
-    border:2px solid #f8f8f8;
+    height: 48px !important;
+  background: #f8f8f8 !important;
+  border: 2px solid #f8f8f8 !important;
     max-width:100%;
     margin-top:18px;
 }

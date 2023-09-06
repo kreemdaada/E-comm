@@ -6,9 +6,7 @@
     <div class="img-container">
         <img src="../assets/images/f1.jpg" alt="" />
         <div class="content">
-            <h6>
-                New Season
-            </h6>
+            <h6>New Season</h6>
             <h3>New collection</h3>
             </div>
           </div>
@@ -17,16 +15,13 @@
           <div class="img-container">
            <img src="../assets/images/f2.jpg" alt="" />
               <div class="content">
-            <h6>
-                New Season
-            </h6>
+            <h6>New Season</h6>
             <h3> bis <span> 50% Rabatt</span></h3>
             </div>
           </div>
          </div>
      </div>
  </div> 
-
 </section>
 </template>
 
@@ -48,6 +43,7 @@
 }
 .products img{
     object-fit: cover;
+    padding:88px;
 }
 .products .img-container{
     position: relative;
