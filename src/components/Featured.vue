@@ -43,7 +43,7 @@
 }
 .products img{
     object-fit: cover;
-    padding:88px;
+    padding:90px;
 }
 .products .img-container{
     position: relative;

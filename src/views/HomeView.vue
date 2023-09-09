@@ -4,6 +4,8 @@ import CatagoryProducts from "../components/CatagoryProducts.vue"
 import {ref} from "vue"
 import Featured from "../components/Featured.vue"
 import Subscribe from "../components/Subscribe.vue"
+import Blogs from "../components/blogs.vue"
+import Footer from "../components/Footer.vue"
 const Frauentabs = ref ([
     "Neue SACHEN",
     "SPIEZEALL",
@@ -84,6 +86,8 @@ const Mantitle = ref('Man')
     />
     <Featured/>
     <Subscribe/>
+    <Blogs/>
+    <Footer/>
 </div>
 </template>
 

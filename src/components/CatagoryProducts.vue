@@ -38,8 +38,8 @@ defineProps (["title","products","tabs"])
     height: 48px !important;
   background: #f8f8f8 !important;
   border: 2px solid #f8f8f8 !important;
-    max-width:100%;
-    margin-top:18px;
+  width:100%;
+    margin-top:98px;
 }
 
 .products{

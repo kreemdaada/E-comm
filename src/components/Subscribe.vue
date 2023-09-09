@@ -6,7 +6,7 @@
         </div>
         <div class="center-content">
           <h6>Special Angebot</h6>
-          <h3>Subscribe und bekomme bis zu 10% Rabatt</h3>
+          <h3>Subscribe und bekomme<span> bis zu 10% Rabatt</span></h3>
           <input type="text" placeholder="Enter your email">
           <button class="btn">Subscribe</button>
         </div>
@@ -40,21 +40,65 @@
   }
   
   .subscribe-wrapper .img-container {
-    flex: 1; /* Grow to fill available space */
+    flex: 1; 
   }
   
-  .subscribe-wrapper .center-content {
-    flex: 2; /* Grow to fill more space than images */
+  .subscribe-wrapper {
+    flex: 2;
     text-align: center;
   }
   
   .subscribe-wrapper .img-container img {
-    max-width: 100%; /* Ensure images don't exceed their container width */
+    max-width: 100%; 
   }
   
-  /* Adjust padding for the entire subscribe section */
+
   .subscribe-section {
     padding: 40px 0;
   }
+  .subscribe-wrapper h6{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13px;
+    opacity:0.4;
+  }
+  .subscribe-wrapper h3 {
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 36px;
+    max-width: 300px;
+    text-align: center;
+    margin:auto;
+
+  }
+  .subscribe-wrapper h3 span {
+    color:#e91e63;
+  }
+  input {
+    height:64px;
+    max-width:340px;
+    margin:auto;
+    background : #f8f8f8;
+    text-align: center;
+    border:none;
+    outline: none;
+    width:100%;
+    margin-bottom:20px;
+  }
+  .subscribe-wrapper .btn{
+    max-width:340px;
+    height:64px;
+    background : #121212;
+    margin:auto;
+    font-size:16px;
+    line-height:18px;
+    text-transform: uppercase;
+    color:#ffffff;
+    opacity:0.9;
+    border:4px solid #121212;
+    font-weight:500;
+  }
+  
   </style>
+
   
